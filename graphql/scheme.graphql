@@ -1,12 +1,11 @@
-type Person{
-    name : string,
-    age : int,
-    gender : string
+type byeong{
+    name : String!
+    age : Int!
+    gender : String!
 }
 
 type Query{
-    name : string!
-    age : int!
+    person : String!
     # "name"은 요청값 String은 응답값 !은 필수값이라는 의미
 }
 

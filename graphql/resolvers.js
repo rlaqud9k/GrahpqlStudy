@@ -1,12 +1,12 @@
-const byeong = (name, age, gender) => {
-    name: name,
-    age: age,
-    gender: "gender"
+const byeong = {
+    name: `rlaqudrhks`,
+    age: 42,
+    gender: "male"
 };
 
 const resolvers = {
     Query : {
-        Person : (name, age, gender) =>
+        person : () => byeong
     }
 
 }
