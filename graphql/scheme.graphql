@@ -1,11 +1,13 @@
-type byeong{
+type Person{
+    id : Int!
     name : String!
     age : Int!
     gender : String!
 }
 
 type Query{
-    person : String!
+    people : [Person]!
+    person(id: Int!): Person!
     # "name"은 요청값 String은 응답값 !은 필수값이라는 의미
 }
 
